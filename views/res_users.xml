@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="inherit_view_users_forms" model="ir.ui.view">
+             <field name="name">inherit.views.users.form</field>
+             <field name="model">res.users</field>
+             <field name="inherit_id" ref="base.view_users_form"/>
+             <field name="arch" type="xml">
+                 <xpath expr="//page[@name='preferences']" position="after">
+                    <page name="sign" string="Signature">
+                        <group>
+                            <group>
+                                <field name="cni" string="Carte d'identité" required="true" />
+                                <field name="sign_application_id" string="Id de l'application" required="true" />
+                            </group>
+                            <group>
+                                <field name="phone_number" string="Téléphone" required="true" /> 
+                            </group>
+                        </group>
+                    </page>
+                 </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
