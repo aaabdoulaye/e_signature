@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 {
-    'name' : 'Electronic signature',
+    'name' : 'optesis signature',
     'version' : '1.0',
     'author': 'Moore sn',
     'maintainer': 'Moore sn',
-    'summary': 'Electronic signature',
+    'summary': 'Optesis signature',
     'sequence': 1,
     'description': """
 SMS marketing 
@@ -15,7 +15,7 @@ This module allow you sign your document
     'website': 'https://moore.sn',
     'images' : ['images/icon.png'],
     'depends' : ['base_setup', 'purchase'],
-    'data': [],
+    'data': ['views/res_users.xml', 'views/purchase_order.xml'],
     'installable': True,
     'application': True,
     'autoinstall': False,
